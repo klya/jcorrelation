@@ -1,0 +1,5 @@
+/lib
+/atlassian-ide-plugin.xml
+/target
+/*.iml
+/*.ipr
