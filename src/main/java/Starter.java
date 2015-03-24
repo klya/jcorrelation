@@ -27,7 +27,7 @@ import java.util.Map;
  * ResourceContextImpl 2h
  * LoadFilesSyncJob 2h
  * StatsSyncJob + ResourceContextImpl 2h
- *
+ * ProcessFilesSyncJob 1.5h
  */
 public class Starter {
     public static void main(String[] args) throws Exception {
