@@ -7,7 +7,6 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.handler.DefaultHandler;
 import org.eclipse.jetty.server.handler.HandlerList;
 import org.eclipse.jetty.server.handler.ResourceHandler;
-import org.eclipse.jetty.server.nio.SelectChannelConnector;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -32,10 +31,7 @@ import java.util.Map;
 public class Starter {
     public static void main(String[] args) throws Exception {
         // Init Http
-        Server server = new Server();
-        SelectChannelConnector connector = new SelectChannelConnector();
-        connector.setPort(8080);
-        server.addConnector(connector);
+        Server server = new Server(8080);
 
         ResourceHandler resource_handler = new ResourceHandler();
         resource_handler.setDirectoriesListed(true);
